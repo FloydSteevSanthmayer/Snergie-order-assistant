@@ -10,7 +10,7 @@ flowchart LR
     H -- "No: Other Error" --> J["Return 500 Error"]:::error
     H -- "Yes" --> K["Format Dates & Build JSON Response"]:::process
     K --> L["Send Success Response to Frontend"]:::success
-    L --> M["User Sees Confirmation Message"]:::end
+    L --> M["User Sees Confirmation Message"]::: end
 
     %% Class definitions (colors)
     classDef start fill:#b3e5fc,stroke:#0277bd,color:#000
